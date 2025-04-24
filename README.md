@@ -12,14 +12,14 @@
 ## 🔥 Commands
 
 - **`/start`**: ⚡ check bot is alive.
-- **`/txt`**:  📁 upload txt file.
+- **`/tushar`**:  📁 upload txt file.
 - **`/stop`**: 🛑 stop ongoing process.
 - **`/restart`**: 🔮 restart the bot.
 - **`/cookies`**: 🍪 upload cookies file.
 - **`/e2t`**: 📝 edit txt file.
 - **`/yt2txt`**: 🗃️ create txt of yt playlist (owner).
-- **`/add`**: 🎊 add user or group or channel (owner).
-- **`/remove`**: ❌ remove user or group or channel (owner).
+- **`/sudo add`**: 🎊 add user or group or channel (owner).
+- **`/sudo remove`**: ❌ remove user or group or channel (owner).
 - **`/userlist`**: 📜 list of sudo user/group/channel.
 - **`/help`**: 🎉 for help.
 
