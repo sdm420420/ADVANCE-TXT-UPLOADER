@@ -6,27 +6,27 @@
 
 ## 😎 Credit
 
-🥳 Credit Goes To [Tushar](https://t.me/Tushar0125)
+🥳 Credit Goes To [sdm](https://t.me/sdmbhaiya)
 
   
 ## 🔥 Commands
 
 - **`/start`**: ⚡ check bot is alive.
-- **`/tushar`**:  📁 upload txt file.
+- **`/txt`**:  📁 upload txt file.
 - **`/stop`**: 🛑 stop ongoing process.
 - **`/restart`**: 🔮 restart the bot.
 - **`/cookies`**: 🍪 upload cookies file.
 - **`/e2t`**: 📝 edit txt file.
 - **`/yt2txt`**: 🗃️ create txt of yt playlist (owner).
-- **`/sudo add`**: 🎊 add user or group or channel (owner).
-- **`/sudo remove`**: ❌ remove user or group or channel (owner).
+- **`/add`**: 🎊 add user or group or channel (owner).
+- **`/remove`**: ❌ remove user or group or channel (owner).
 - **`/userlist`**: 📜 list of sudo user/group/channel.
 - **`/help`**: 🎉 for help.
 
 
 ## ✅ Pw & Cp Without Purchase Txt Extractor Bot
 
-🥳 Pw & Cp Without Purchase Txt Extractor Bot [Click Here](https://t.me/PwCpTxtExtractorBot)
+🥳 Pw & Cp Without Purchase Txt Extractor Bot [Click Here](https://t.me/sdmbhaiya)
  
 
 ## Guide For Heroku Deployment 
