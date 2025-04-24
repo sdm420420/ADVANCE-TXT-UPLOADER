@@ -8,7 +8,7 @@
         "pyrogram"
     ],
     "env": {
-        "API_ID":{
+        "API_ID":{26957728"}
             "description": "Get your telegram API ID from https://my.telegram.org",
             "value":"20114039"
         },
@@ -18,10 +18,10 @@
         },
         "BOT_TOKEN":{
             "description":"Get from BotFather",
-            "value":"7559250442:AAF_HDC3Fb_yG6xHxXkRhhwlMm3LiwT9MkE"
+            "value":"7498955283:AAGV5vWOf9KBjX0B7YGLk1rkpfTNTQfDbA4"
         },
         "AUTH_USERS":{
-            "description":"Admin/Owner/Friends ID Seperate by ','  Ex: 44578878,8878899",
+            "description":"Admin/Owner/Friends ID Seperate by ','  Ex: 7952415542,8878899",
              "value":"8172163893"
        
 	}
