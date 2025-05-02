@@ -1,6 +1,55 @@
 # Don't Remove Credit Tg - @sdmbhaiya
 # Ask Doubt on telegram @sdmbhaiya
+import os
+import re
+from pyrogram import Client, filters
+from pyrogram.types import Message
+from yt_dlp import YoutubeDL
 
+# Telegram Bot Config (टोकन वगैरह)
+API_ID = int(os.environ.get("API_ID", 123456))  # अपनी API ID डालें
+API_HASH = os.environ.get("API_HASH", "your_api_hash")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "your_bot_token")
+
+bot = Client("advance_txt_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+
+# 📁 डाउनलोड फोल्डर बना लें
+if not os.path.exists("downloads"):
+    os.makedirs("downloads")
+
+# 📄 PDF या DOCX फाइल्स का टेक्स्ट में कन्वर्शन (जैसा पहले से कोड है)
+@bot.on_message(filters.private & filters.document)
+async def handle_document(client, message: Message):
+    file_path = await message.download(file_name="downloads/")
+    await message.reply("✅ फाइल डाउनलोड हुई, लेकिन अब सिर्फ PDF हैंडलिंग है।")
+
+# 🎬 YouTube वीडियो डाउनलोडर
+@bot.on_message(filters.private & filters.text)
+async def youtube_handler(client, message: Message):
+    url = message.text.strip()
+    youtube_regex = r"(https?://)?(www\.)?(youtube\.com|youtu\.be)/\S+"
+
+    if re.match(youtube_regex, url):
+        await message.reply("🔍 वीडियो डाउनलोड हो रहा है, कृपया प्रतीक्षा करें...")
+
+        try:
+            ydl_opts = {
+                'format': 'best',
+                'outtmpl': 'downloads/%(title)s.%(ext)s'
+            }
+
+            with YoutubeDL(ydl_opts) as ydl:
+                info = ydl.extract_info(url, download=True)
+                filename = ydl.prepare_filename(info)
+
+            await message.reply_video(video=filename, caption=f"✅ डाउनलोड पूरा हुआ: {info['title']}")
+            os.remove(filename)  # क्लीनअप
+
+        except Exception as e:
+            await message.reply(f"❌ डाउनलोड में समस्या: {e}")
+
+# ▶️ बॉट स्टार्ट करें
+bot.run()
 import os
 import re
 import sys
